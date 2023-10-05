@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arcanyang - The Tarot Master Cat</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/tooplate-style.css" rel="stylesheet">
+<!--
+
+Tooplate 2122 Nano Folio
+
+https://www.tooplate.com/view/2122-nano-folio
+
+-->
+</head>
+<body>
+	<div class="tm-container-fluid">
+		
+		<div class="tm-gallery-section tm-mb-80">
+			
+			<div class="tm-gallery">				
+				<div class="tm-gallery-item city portraits">
+		            <a href="major.html">
+		            	<img src="img/Icon01.png" class="img-fluid" />
+		            </a>
+		        </div>
+				<div class="tm-gallery-item portraits">
+		            <a href="wands.html">
+		            	<img src="img/Icon02.png" class="img-fluid" />
+		            </a>
+		        </div>
+				<div class="tm-gallery-item city">
+		            <a href="cups.html">
+		            	<img src="img/Icon03.png" class="img-fluid" />
+		            </a>
+		        </div>
+		        <div class="tm-gallery-item nature">
+		            <a href="swords.html">
+		            	<img src="img/Icon04.png" class="img-fluid" />
+		            </a>
+		        </div>
+				<div class="tm-gallery-item city">
+		            <a href="pentacles.html">
+		            	<img src="img/Icon05.png" class="img-fluid" />
+		            </a>
+		        </div>
+				<div class="tm-gallery-item city">
+		            
+		            	<img src="img/Icon06.png" class="img-fluid" />
+		            </a>
+		        </div>
+		        
+			</div>			
+		</div>
+
+		
+
+		<footer class="tm-footer">
+			Copyright  2023  ARCANYANG
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+		  	// Init the image gallery
+		  	var $gallery = $(".tm-gallery").isotope({
+		    	itemSelector: ".tm-gallery-item",
+		    	layoutMode: "fitRows"
+		  	});
+		  
+		  	// Layout Isotope after each image loads
+		  	$gallery.imagesLoaded().progress(function() {
+		    	$gallery.isotope("layout");
+		  	});
+
+		  	$(".filters-button-group").on("click", "a", function(e) {
+		  		e.preventDefault();
+			    var filterValue = $(this).attr("data-filter");
+			    $gallery.isotope({ filter: filterValue });
+			    $('.filters-button-group a').removeClass('active');
+			    $(this).addClass('active');
+			});
+
+
+		});
+	</script>
+</body>
+</html>
