@@ -1,0 +1,139 @@
+
+body {
+margin : 0;
+padding : 0;
+font : 73% tahoma, helvetica, "Trebuchet MS", arial, sans-serif;
+line-height : 1.7em;
+color : #333;
+background : #9ea4ac;
+}
+#header {
+height : 200px;
+margin : 0;
+color : #000;
+background : #d6c4ae url(images/banner.jpg) no-repeat;
+}
+.container {
+clear : both;
+width : 100%;
+padding : 0;
+margin : 0;
+}
+#navcontainer ul {
+text-align : center;
+font-size : 130%;
+padding-bottom : 5px;
+padding-top : 5px;
+padding-left : 0;
+margin-top : 0;
+margin-left : 0;
+background : #bfa280;
+color : #fff;
+width : 100%;
+line-height : 18px;
+}
+#navcontainer ul li {
+display : inline;
+padding-left : 0;
+padding-right : 0;
+padding-bottom : 5px;
+padding-top : 5px;
+}
+#navcontainer ul li a {
+padding-left : 10px;
+padding-right : 10px;
+padding-bottom : 5px;
+padding-top : 5px;
+color : #fff;
+text-decoration : none;
+border-right : 1px solid #fff;
+}
+#navcontainer ul li a:hover {
+background : #d6c4ae;
+color : #72522c;
+}
+#navcontainer #active {
+border-left : 1px solid #fff;
+}
+#gutter {
+float : left;
+width : 10%;
+height : 1px;
+}
+#col1 {
+float : left;
+width : 44%;
+margin-bottom : 1em;
+padding-right : 6%;
+}
+#col2 { background : url(images/img2.jpg) no-repeat bottom right;
+float : left;
+width : 30%;
+margin-left : 6%;
+margin-bottom : 1em;
+padding-right : 1%;
+}
+#footer {
+clear : both;
+height : 50px;
+padding : 5px;
+border-top : 20px solid #72522c;
+text-align : left;
+background : #baf1ff;
+color : #000;
+}
+h1 {
+margin-top : 20px;
+margin-left : 10px;
+padding : 0.3em;
+font-size : 200%;
+letter-spacing : 5px;
+color : #fff;
+background : transparent;
+}
+h2 {
+margin-top : 20px;
+padding : 0.5em 0 0 0.5em;
+text-transform : uppercase;
+letter-spacing : 5px;
+font-size : 140%;
+color : #72522c;
+background : transparent;
+}
+h3 {
+margin : 20px 0 0 30px;
+padding : 0.5em 0 0 0.5em;
+text-transform : none;
+letter-spacing : 5px;
+font-size : 140%;
+color : #72522c;
+background : transparent;
+}
+a {
+text-decoration : underline;
+color : #afe2e6;
+background : inherit;
+}
+a:hover {
+text-decoration : none;
+color : #000;
+background : inherit;
+}
+a img {
+border : 0;
+}
+#gallery {
+margin-left : 10px;
+}
+#gallery img {
+float : left;
+padding : 5px;
+}
+.clear {
+clear : left;
+}
+blockquote {
+font-weight : bold;
+font-style : italic;
+color : #b29b35;
+}
